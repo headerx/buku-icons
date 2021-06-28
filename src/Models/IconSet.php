@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HeaderX\Models;
+namespace HeaderX\BukuIcons\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

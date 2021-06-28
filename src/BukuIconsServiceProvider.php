@@ -3,7 +3,10 @@
 namespace HeaderX\BukuIcons;
 
 use HeaderX\BukuIcons\Commands\ImportIconsCommand;
+use HeaderX\BukuIcons\Commands\InstallCommand;
+use HeaderX\BukuIcons\Http\Livewire\IconSearch;
 use Illuminate\Support\Facades\Blade;
+use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +21,7 @@ class BukuIconsServiceProvider extends PackageServiceProvider
         Blade::component('buku-icons::components.h5', 'buku-icons::h5');
         Blade::component('buku-icons::components.icon-link', 'buku-icons::icon-link');
         Blade::component('buku-icons::components.layout', 'buku-icons::layout');
+        Livewire::component('buku-icons::icon-search', IconSearch::class);
     }
 
     public function configurePackage(Package $package): void
@@ -33,6 +37,7 @@ class BukuIconsServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasRoute('web')
             ->hasCommand(ImportIconsCommand::class)
+            ->hasCommand(InstallCommand::class)
             ->hasMigration('create_icons_table')
             ->hasAssets();
     }

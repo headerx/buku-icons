@@ -4,9 +4,9 @@
         <meta name="msapplication-TileColor" content="#b91d47">
         <meta name="theme-color" content="#ffffff">
 
-        <script src="{{ mix('vendor/buku-icons/js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js','vendor/buku-icons') }}" defer></script>
 
-        <link href="{{ mix('vendor/buku-icons/css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/app.css','vendor/buku-icons') }}" rel="stylesheet">
 
         {{ $head ?? '' }}
 

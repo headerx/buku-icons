@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace HeaderX\BukuIcons\Http\Livewire;
 
-use HeaderX\Models\Icon;
-use HeaderX\Models\IconSet;
+use HeaderX\BukuIcons\Models\Icon;
+use HeaderX\BukuIcons\Models\IconSet;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Collection;
 use Livewire\Component;
@@ -34,7 +34,7 @@ class IconSearch extends Component
 
     public function render(): View
     {
-        return view('livewire.icon-search', [
+        return view('buku-icons::livewire.icon-search', [
             'total' => Icon::query()->withSet($this->set)->count(),
             'icons' => $this->icons(),
             'sets' => IconSet::orderBy('name')->get(),

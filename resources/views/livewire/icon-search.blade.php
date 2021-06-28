@@ -32,15 +32,15 @@
                 >
                 <div class="absolute inset-y-0 right-0 flex items-center justify-center mr-5">
                     <div wire:loading>
-                        <x-icon-refresh class="inline w-6 h-6 text-scarlet-600 fill-current animate-spin"/>
+                        <x-heroicon-o-refresh class="inline w-6 h-6 text-scarlet-600 fill-current animate-spin"/>
                     </div>
 
                     <div wire:loading.remove>
                         <button wire:click="resetSearch">
                             @if ($search)
-                                <x-icon-close class="inline w-6 h-6 text-gray-500 transition duration-300 ease-in-out fill-current hover:text-scarlet-500"/>
+                                <x-antdesign-close-o class="inline w-6 h-6 text-gray-500 transition duration-300 ease-in-out fill-current hover:text-scarlet-500"/>
                             @else
-                                <x-icon-refresh class="inline w-6 h-6 text-scarlet-600 transition duration-300 ease-in-out fill-current hover:text-scarlet-500"/>
+                                <x-heroicon-o-refresh class="inline w-6 h-6 text-scarlet-600 transition duration-300 ease-in-out fill-current hover:text-scarlet-500"/>
                             @endif
                         </button>
                     </div>
@@ -51,9 +51,9 @@
 
     <div>
         @if ($search)
-            <x-p>
+            <x-buku-icons::p>
                 <span class="text-gray-500">Found:</span> {{ trans_choice('app.icons-result', count($icons)) }}
-            </x-p>
+            </x-buku-icons::p>
         @endif
 
         <div class="mt-5 grid gap-3 gap-y-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10 text-sm">

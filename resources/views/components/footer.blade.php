@@ -7,11 +7,11 @@
             </x-buku-icons::a>
             <x-buku-icons::a href="https://github.com/blade-ui-kit/blade-ui-kit" class="ml-6">
                 <span class="sr-only">GitHub</span>
-                <x-icon-github class="h-6 w-6" />
+                <x-antdesign-github class="h-6 w-6" />
             </x-buku-icons::a>
             <x-buku-icons::a href="https://discord.gg/Vev5CyE" class="ml-6">
                 <span class="sr-only">Discord</span>
-                <x-icon-discord class="h-6 w-6" />
+                <x-lineawesome-discord class="h-6 w-6" />
             </x-buku-icons::a>
         </div>
         <div class="mt-8 md:mt-0 md:order-1">

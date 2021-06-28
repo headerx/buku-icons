@@ -6,6 +6,26 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateIconsTable extends Migration
 {
+    /**
+     * Create a new migration instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->schema = Schema::connection($this->getConnection());
+    }
+
+    /**
+     * Get the migration connection name.
+     *
+     * @return string|null
+     */
+    public function getConnection()
+    {
+        return config('buku-icons.db_connection');
+    }
+
     public function up()
     {
         Schema::create('icons', function (Blueprint $table) {

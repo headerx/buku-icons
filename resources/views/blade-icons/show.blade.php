@@ -2,9 +2,9 @@
 
     <div id="icon-detail" class="mt-6 relative max-w-screen-xl px-4 mx-auto sm:px-6">
         <x-buku-icons::h3>
-            <x-a :href="$icon->set->repository">
+            <x-buku-icons::a :href="$icon->set->repository">
                 {{ $icon->set->name }}
-            </x-a>
+            </x-buku-icon::a>
 
             <br class="sm:hidden"> / {{ $icon->name }}
         </x-buku-icons::h3>
@@ -19,28 +19,28 @@
                     <x-buku-icons::h5>Install through composer</x-buku-icons::h5>
                     <x-markdown class="mt-2 font-medium prose-sm prose bg-gray-700 rounded text-gray-50 sm:text-base">```
     composer require {{ $icon->set->composer }}
-    ```</x-markdown>
+    </x-markdown>
                 </div>
 
                 <div class="w-full mt-6">
                     <x-buku-icons::h5>Use it as a component</x-buku-icons::h5>
                     <x-markdown class="mt-2 font-medium prose-sm prose bg-gray-700 rounded text-gray-50 sm:text-base">```
     <x-{{ $icon->name }} />
-    ```</x-markdown>
+    </x-markdown>
                 </div>
 
                 <div class="w-full mt-6">
                     <x-buku-icons::h5>Use it as a directive</x-buku-icons::h5>
                     <x-markdown class="mt-2 font-medium prose-sm prose bg-gray-700 rounded text-gray-50 sm:text-base">```
     @@svg('<?php echo $icon->name ?>')
-    ```</x-markdown>
+    </x-markdown>
                 </div>
 
                 <div class="w-full mt-6">
                     <x-buku-icons::h5>Use it with a helper</x-buku-icons::h5>
                     <x-markdown class="mt-2 font-medium prose-sm prose bg-gray-700 rounded text-gray-50 sm:text-base">```
     {{ svg('<?php echo $icon->name ?>') }}
-    ```</x-markdown>
+    </x-markdown>
                 </div>
             </div>
         </div>

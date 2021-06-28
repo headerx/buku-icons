@@ -1,4 +1,4 @@
-<x-buku-icons::layout :title="$icon->name">
+<x-buku-icons::layout title="Blade Icons">
     <div>
         <div class="mt-16 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
@@ -6,7 +6,7 @@
                     Search for an icon
                 </x-buku-icons::h3>
                 <x-buku-icons::p>
-                    With {{ HeaderX\Models\IconSet::count() }} different icon sets, we probably can find the right one for you.
+                    With {{ HeaderX\BukuIcons\Models\IconSet::count() }} different icon sets, we probably can find the right one for you.
                 </x-buku-icons::p>
             </div>
         </div>

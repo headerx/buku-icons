@@ -4,8 +4,8 @@ namespace HeaderX\BukuIcons\Commands;
 
 use BladeUI\Icons\Factory;
 use BladeUI\Icons\IconsManifest;
-use HeaderX\Models\Icon;
-use HeaderX\Models\IconSet;
+use HeaderX\BukuIcons\Models\Icon;
+use HeaderX\BukuIcons\Models\IconSet;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;

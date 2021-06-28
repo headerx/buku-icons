@@ -1,18 +1,16 @@
 <?php
 
-declare(strict_types=1);
-
 namespace HeaderX\BukuIcons\Http\Controllers;
 
-use HeaderX\Models\Icon;
+use HeaderX\BukuIcons\Models\Icon;
 
 class ShowIconController
 {
     public function __invoke(Icon $icon)
     {
-        return view('blade-icons.show', [
+        return view('buku-icons::blade-icons.show', [
             'icon' => $icon,
-            'icons' => Icon::relatedIcons($icon),
+            'icons' => $icon->relatedIcons(),
         ]);
     }
 }
