@@ -86,4 +86,3 @@ class ImportIconsCommand extends Command
         return Str::of($string)->match($rule)->isNotEmpty();
     }
 }
-

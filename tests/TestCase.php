@@ -2,9 +2,9 @@
 
 namespace HeaderX\BukuIcons\Tests;
 
+use HeaderX\BukuIcons\BukuIconsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use HeaderX\BukuIcons\BukuIconsServiceProvider;
 
 class TestCase extends Orchestra
 {
