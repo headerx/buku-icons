@@ -1,4 +1,4 @@
-# Extracted from https://blade-ui-kit.com/blade-icons
+# Installs over 50,000 icons. From https://blade-ui-kit.com/blade-icons
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/headerx/buku-icons.svg?style=flat-square)](https://packagist.org/packages/headerx/buku-icons)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/headerx/buku-icons/run-tests?label=tests)](https://github.com/headerx/buku-icons/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -37,7 +37,24 @@ return [
 
 ## Usage
 
-https://github.com/blade-ui-kit/blade-ui-kit.com#readme
+Publish migrate and import in one step
+```bash
+php artisan buku-icons:install
+```
+
+Or publish configuration and migrations and migrate manually, then run
+```bash
+php artisan buku-icons:import
+```
+
+See https://github.com/blade-ui-kit/blade-ui-kit.com for more info. 
+
+All I've done is make a package from the icon portion of Blade UI Kit website,
+which incidentally can be used to set up icon relationships in your Eloquent models.
+
+If you like this package and want to make a donation, please visit https://github.com/sponsors/driesvints.
+
+I personally am not accepting donations at this time, thank you.
 
 ## Testing
 

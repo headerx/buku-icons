@@ -1,6 +1,6 @@
 {
     "name": "headerx/buku-icons",
-    "description": "Extracted from https://blade-ui-kit.com/blade-icons",
+    "description": "# Installs over 50,000 icons. From https://blade-ui-kit.com/blade-icons",
     "keywords": [
         "headerx",
         "laravel",
@@ -17,10 +17,6 @@
             "name": "inmanturbo",
             "email": "inman.turbo@gmail.com",
             "role": "Developer"
-        },
-        {
-            "name": "Dries Vints",
-            "homepage": "https://driesvints.com"
         }
     ],
     "require": {
