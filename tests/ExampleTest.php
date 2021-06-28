@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace HeaderX\BukuIcons\Tests;
 
 class ExampleTest extends TestCase
 {
