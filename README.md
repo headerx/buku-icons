@@ -31,7 +31,13 @@ This is the contents of the published config file:
 <?php
 
 return [
-    'route_prefix' => '/blade-icons'
+    'route_prefix' => '/blade-icons',
+
+    'middleware' => [
+        'web',
+    ],
+
+    'db_connection' => env('DB_CONNECTION', 'mysql'),
 ];
 ```
 
