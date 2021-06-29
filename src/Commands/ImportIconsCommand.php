@@ -38,7 +38,6 @@ class ImportIconsCommand extends Command
         $this->info('Starting to import icon sets...');
 
         DB::transaction(function () {
- 
             Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
