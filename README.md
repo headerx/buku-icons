@@ -97,6 +97,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
+- [driesvints](https://driesvints.com/)
 - [inmanturbo](https://github.com/inmanturbo)
 - [All Contributors](../../contributors)
 
