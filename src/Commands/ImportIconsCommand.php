@@ -38,9 +38,8 @@ class ImportIconsCommand extends Command
         $this->info('Starting to import icon sets...');
 
         DB::transaction(function () {
-            Icon::withoutSyncingToSearch(function () {
-                Icon::query()->delete();
-            });
+ 
+            Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
                 $this->parseIcons($iconSet);
