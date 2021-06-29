@@ -54,20 +54,18 @@ class ImportIconsCommand extends Command
 
     private function parseIcons(IconSet $iconSet): void
     {
-        Icon::withoutSyncingToSearch(function () use ($iconSet) {
-            $set = $this->sets[$iconSet->name];
+        $set = $this->sets[$iconSet->name];
 
-            foreach ($this->icons[$iconSet->name] ?? [] as $icons) {
-                foreach ($icons as $icon) {
-                    Icon::create([
-                        'icon_set_id' => $iconSet->id,
-                        'name' => $set['prefix'].'-'.$icon,
-                        'outlined' => $this->isOutlined($icon, $iconSet->outline_rule),
-                        'keywords' => $this->keywords($icon, $iconSet->ignore_rule),
-                    ]);
-                }
+        foreach ($this->icons[$iconSet->name] ?? [] as $icons) {
+            foreach ($icons as $icon) {
+                Icon::create([
+                    'icon_set_id' => $iconSet->id,
+                    'name' => $set['prefix'].'-'.$icon,
+                    'outlined' => $this->isOutlined($icon, $iconSet->outline_rule),
+                    'keywords' => $this->keywords($icon, $iconSet->ignore_rule),
+                ]);
             }
-        });
+        }
     }
 
     private function keywords(string $string, ?string $rule): array
