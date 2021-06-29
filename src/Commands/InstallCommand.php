@@ -23,6 +23,7 @@ class InstallCommand extends Command
         $this->callSilent('vendor:publish', ['--tag' => 'buku-icons-config']);
         $this->callSilent('vendor:publish', ['--tag' => 'buku-icons-views']);
         $this->call('migrate');
+        $this->callSilent('icon:cache');
         $this->call('buku-icons:import');
         $this->info('Installation complete.');
 
