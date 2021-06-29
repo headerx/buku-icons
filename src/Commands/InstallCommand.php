@@ -22,7 +22,6 @@ class InstallCommand extends Command
         $this->callSilent('vendor:publish', ['--tag' => 'buku-icons-assets']);
         $this->callSilent('vendor:publish', ['--tag' => 'buku-icons-config']);
         $this->callSilent('vendor:publish', ['--tag' => 'buku-icons-views']);
-        $this->callSilent('vendor:publish', ['--provider' => 'Laravel\Scout\ScoutServiceProvider']);
         $this->call('migrate');
         $this->call('buku-icons:import');
         $this->info('Installation complete.');
