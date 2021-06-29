@@ -4,6 +4,7 @@ namespace HeaderX\BukuIcons\Tests;
 
 use HeaderX\BukuIcons\BukuIconsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -21,6 +22,7 @@ class TestCase extends Orchestra
     {
         return [
             BukuIconsServiceProvider::class,
+            LivewireServiceProvider::class,
         ];
     }
 
