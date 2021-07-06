@@ -7,7 +7,6 @@ use Illuminate\Contracts\Database\Eloquent\CastsInboundAttributes;
 
 class IconIdCast implements CastsInboundAttributes
 {
-
     /**
      * Prepare the given value for storage.
      *
