@@ -45,4 +45,9 @@ class CreateIconsTable extends Migration
             $table->timestamps();
         });
     }
+    
+    public function down()
+    {
+        $this->schema->dropIfExists('icons');
+    }
 };
