@@ -28,7 +28,7 @@ class FindIconByNameOrIdAction
             return Icon::query()->find($icon) ? Icon::query()->find($icon) : null;
         }
 
-        $icon = Icon::query()->where('name', $icon)->first();
+        $icon = Icon::query()->where('name', $icon)->first() ?? Icon::query()->where('name', 'carbon-no-image-32')->first();
 
         return $icon;
     }
