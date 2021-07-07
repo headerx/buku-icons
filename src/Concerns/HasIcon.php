@@ -14,6 +14,9 @@ trait HasIcon
 
     public function setIconIdAttribute($value)
     {
-        $this->attributes['icon_id'] = ((new FindIconByNameOrIdAction)($value))->id;
+        if($value){
+
+            $this->attributes['icon_id'] = ((new FindIconByNameOrIdAction)($value))->id;
+        }
     }
 }
