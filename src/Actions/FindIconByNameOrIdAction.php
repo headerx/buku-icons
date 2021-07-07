@@ -24,7 +24,7 @@ class FindIconByNameOrIdAction
         }
 
 
-        if (is_int($icon)) {
+        if (is_numeric($icon)) {
             return Icon::query()->find($icon) ? Icon::query()->find($icon) : null;
         }
 
