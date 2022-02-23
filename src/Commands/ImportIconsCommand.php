@@ -41,7 +41,7 @@ class ImportIconsCommand extends Command
             Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
-                if(in_array($iconSet->name, $this->sets)) {
+                if (in_array($iconSet->name, $this->sets)) {
                     $this->parseIcons($iconSet);
                 }
             });
