@@ -20,7 +20,7 @@ class FindIconByNameOrIdAction
     {
         // Leave early if there is no icon
         // todo make no image icon configurable
-        if (!$icon) {
+        if (! $icon) {
             return Icon::query()->where('name', 'heroicon-o-x')->first();
         }
 
