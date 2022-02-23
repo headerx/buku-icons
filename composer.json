@@ -73,7 +73,7 @@
         "illuminate/contracts": "^8.37|^9",
         "itsmalikjones/blade-iconic": "^1.1",
         "khatabwedaa/blade-css-icons": "^1.0",
-        "league/commonmark": "^1.5",
+        "league/commonmark": "~1|~2",
         "livewire/livewire": "^2.5",
         "mallardduck/blade-boxicons": "^2.1",
         "nerdroid23/blade-icomoon": "^1.0",
