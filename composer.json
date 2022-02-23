@@ -20,7 +20,6 @@
         }
     ],
     "require": {
-        "actb/blade-github-octicons": "^4.0",
         "andreiio/blade-iconoir": "^1.0",
         "andreiio/blade-remix-icon": "^1.0",
         "blade-ui-kit/blade-heroicons": "^1.0",
