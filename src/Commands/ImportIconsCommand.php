@@ -41,26 +41,25 @@ class ImportIconsCommand extends Command
             Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
-                if (in_array($iconSet->name, $this->sets)) {
-                    $this->parseIcons($iconSet);
-                }
+
+                $this->parseIcons($iconSet);
             });
         });
 
-        $this->info('Successfully imported '.IconSet::count().' icon sets!');
+        $this->info('Successfully imported ' . IconSet::count() . ' icon sets!');
 
         return 0;
     }
 
     private function parseIcons(IconSet $iconSet): void
     {
-        $set = $this->sets[$iconSet->name];
+        $set = $this->sets[$iconSet->name] ?? null;
 
         foreach ($this->icons[$iconSet->name] ?? [] as $icons) {
             foreach ($icons as $icon) {
                 Icon::create([
                     'icon_set_id' => $iconSet->id,
-                    'name' => $set['prefix'].'-'.$icon,
+                    'name' => $set['prefix'] . '-' . $icon,
                     'outlined' => $this->isOutlined($icon, $iconSet->outline_rule),
                     'keywords' => $this->keywords($icon, $iconSet->ignore_rule),
                 ]);
