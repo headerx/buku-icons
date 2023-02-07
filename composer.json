@@ -74,6 +74,7 @@
         "livewire/livewire": "^2.5",
         "mallardduck/blade-boxicons": "^2.1",
         "nerdroid23/blade-icomoon": "^1.0",
+        "owenvoke/blade-entypo": "^2.0",
         "ryangjchandler/blade-tabler-icons": "^1.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "spatie/laravel-responsecache": "^7.2"
