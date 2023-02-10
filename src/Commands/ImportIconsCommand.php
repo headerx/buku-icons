@@ -37,7 +37,7 @@ class ImportIconsCommand extends Command
 
         $this->info('Starting to import icon sets...');
 
-        DB::transaction(function () {
+        DB::connection(config('buku-icons.db_connection'))->transaction(function () {
             Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
@@ -45,20 +45,20 @@ class ImportIconsCommand extends Command
             });
         });
 
-        $this->info('Successfully imported '.IconSet::count().' icon sets!');
+        $this->info('Successfully imported ' . IconSet::count() . ' icon sets!');
 
         return 0;
     }
 
     private function parseIcons(IconSet $iconSet): void
     {
-        $set = $this->sets[$iconSet->name];
+        $set = $this->sets[$iconSet->name] ?? null;
 
         foreach ($this->icons[$iconSet->name] ?? [] as $icons) {
             foreach ($icons as $icon) {
                 Icon::create([
                     'icon_set_id' => $iconSet->id,
-                    'name' => $set['prefix'].'-'.$icon,
+                    'name' => $set['prefix'] . '-' . $icon,
                     'outlined' => $this->isOutlined($icon, $iconSet->outline_rule),
                     'keywords' => $this->keywords($icon, $iconSet->ignore_rule),
                 ]);
