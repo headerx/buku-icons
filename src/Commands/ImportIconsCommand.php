@@ -37,7 +37,7 @@ class ImportIconsCommand extends Command
 
         $this->info('Starting to import icon sets...');
 
-        DB::transaction(function () {
+        DB::connection(config('buku-icons.db_connection'))->transaction(function () {
             Icon::query()->delete();
 
             IconSet::each(function (IconSet $iconSet) {
