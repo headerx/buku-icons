@@ -67,7 +67,7 @@
         "codeat3/blade-unicons": "^1.1",
         "codeat3/blade-vaadin-icons": "^1.1",
         "codeat3/blade-weather-icons": "^1.2",
-        "illuminate/contracts": "^8.37|^9",
+        "illuminate/contracts": "^8.37|^9|^10",
         "itsmalikjones/blade-iconic": "^1.1",
         "khatabwedaa/blade-css-icons": "^1.0",
         "league/commonmark": "~1|~2",
