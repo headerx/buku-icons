@@ -17,8 +17,8 @@ class IconSearch extends Component
     public string $set = '';
 
     protected $queryString = [
-        'search' => ['except' => ''],
-        'set' => ['except' => ''],
+        'search' ,
+        'set',
     ];
 
     public function mount(): void
