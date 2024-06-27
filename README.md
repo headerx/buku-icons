@@ -65,18 +65,6 @@ If you like this package and want to make a donation, please visit https://githu
 
 I personally am not accepting donations at this time, thank you.
 
-P.S I am currently accepting PR's for the folowing:
-
-> I would like to bring back in support for meilisearch with scout, 
-> but had to disable it for now to allow a standard search scope.
-> What I would like is to have a singleton with a repository layer
-> to allow configuring the use of custom Icon models. 
-
-
-> Instead for now I've just allowed for confuration of the connection in case 
-> you just want to use this for an ad hoc script for loading all the icons into 
-> an Sqlite database or something of that nature. 
-
 ## Testing
 
 ```bash
