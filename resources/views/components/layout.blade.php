@@ -10,13 +10,13 @@
 
         {{ $head ?? '' }}
 
-        {{-- @livewireStyles
-        @bukStyles --}}
+        {{-- @livewireStyles --}}
+        {{-- @bukStyles --}}
 
     </x-slot>
 
     {{ $slot }}
 
-    {{-- @livewireScripts
-    @bukScripts --}}
+    {{-- @livewireScripts --}}
+    {{-- @bukScripts --}}
 </x-html>
