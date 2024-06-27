@@ -21,7 +21,7 @@
 {{ $icon->name }}
     </x-markdown>
                 </div>
- @if(auth()->user()->type === \App\Models\UserType::SuperAdmin)
+ @if(app()->isLocal())
                 <div class="w-full mt-6">
                     <x-buku-icons::h5>Use outside of blade</x-buku-icons::h5>
                     <x-markdown class="mt-2 font-medium prose-sm prose bg-gray-700 rounded text-gray-50 sm:text-base">```
