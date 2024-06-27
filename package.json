@@ -21,10 +21,10 @@
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.4.0",
-        "autoprefixer": "^10.4.15",
+        "autoprefixer": "^10.4.19",
         "clipboard": "^2.0.11",
         "highlight.js": "^10.4.1",
-        "postcss": "^8.4.29",
+        "postcss": "^8.4.38",
         "smooth-scroll": "^16.1.3",
         "tailwindcss": "^2.1.2"
     }
